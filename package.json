@@ -1,0 +1,10 @@
+{
+  "name": "AirTraficFE",
+  "version": "1.0.0",
+  "description": "Application that monitores air traffic ",
+  "main": "index.js",
+  "repository": "https://github.com/dejan-krstic/air-traffic-fe-test.git",
+  "author": "dejan-krstic <dejanmkrstic@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
