@@ -28,6 +28,13 @@ module.exports = {
             //     }
             // },
             {
+                test: /\.hbs$/,
+                use: {
+                    loader: 'handlebars-loader'
+                }
+
+            },
+            {
                 test: /\.css$/,
                 use: [
                     { loader: 'style-loader' },
