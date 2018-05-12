@@ -2,6 +2,8 @@ import { geolocationService } from './services/GeolocationService'
 import { dataService } from './services/DataService'
 import { API_URL } from './constants/constants'
 import Flight from './models/Flight'
+import { createUIFrame } from './ui/Frame';
+import { addFlightListItem } from './ui/ListItem'
 
 const data = {
     flightsList: [],
@@ -26,8 +28,16 @@ const onSuccessHandler = response => {
             const { Trak, Alt, Id, Man, Mdl, To, From } = e
             return new Flight(Trak, Alt, Id, Man, Mdl, To, From)
         })
-        .sort((a, b) => b.altitude - a.altitude);
-        console.log(data.flightsList);
+        .sort((a, b) => b.altitude - a.altitude)
+        .forEach((e,i) => addFlightListItem(e, i, displayFlight))  
+        console.log('no await = '+data.flightsList);
+
+
+        
+}
+
+const displayFlight = (e) => {
+    console.log(e)      //   ---------------------------Routing here --------------------------------------- 
 }
 
 const onErrHandler = err => console.log(err)
@@ -42,5 +52,6 @@ const getFlights = (userCoordinates, distance) => {
 
 
 export const startApp = () => {
+    createUIFrame()
     getUserLocationData()
 }

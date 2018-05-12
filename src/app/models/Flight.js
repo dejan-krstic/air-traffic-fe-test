@@ -9,10 +9,10 @@ class Flight {
         this.flightOrigin = flightOrigin;
     }
     getCourse(){
-        if ( this.course < 45 || this.course >= 315 ) return 'NORTH'
-        if ( this.course < 135 || this.course >= 45 ) return 'EAST'
-        if ( this.course < 225 || this.course >= 135 ) return 'SOUTH'
-        if ( this.course < 315 || this.course >= 225 ) return 'WEST'        
+        if ( this.course < 45 || this.course >= 315 ) return 'north'
+        if ( this.course < 135 || this.course >= 45 ) return 'east'
+        if ( this.course < 225 || this.course >= 135 ) return 'south'
+        if ( this.course < 315 || this.course >= 225 ) return 'west'        
     }
     
 }
