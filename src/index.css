@@ -1,4 +1,228 @@
-img {
+/*  --------------------MAIN--------------------------- */
+
+img {    
     width: 50px;
+}
+body {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.3em;
+}
+
+
+main {
+    margin: 0 10%;
+}
+
+button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/*  ---------------------HEADER--------------------------- */
+.ui-container {
+    position: relative;
+    top: 30vh;
+  }
+    .ui-container {
+        display: grid;
+  }
+.title {
+    font-family: "Helvetica", sans-serif;
+    font-weight: 1000;
+    font-size: 5em;
+    margin-bottom: 2vh;
+}
+.btn-container {
+    height:2vh;
+}
+
+.allow-btn {
+    background-color: #091113;
+    border-radius: 1vw;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2vw;
+    padding: 1vw 2vw;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    margin: auto auto;
+}        
+    
+.allow-btn:hover {
+    background-color: grey;
+}
+
+.allow-btn:active {
+    top: 3px;
+}
+
+    
+div.header {
+    background-color: rgb(64,224,208);
+    padding: 5px 15px;
+
+}
+#slider {
+    width: 30vw;
+}
+
+.error-container {
+    position: relative;
+    display:inline;
+    top: -10vh;
+    margin: 0 auto;
+    color: red;
+    text-align: center;
+}
+
+.show-radius {
+    display: inline-block;
+}
+
+.translate-up {
+    transition: transform 0.5s;
+    transform: translate(0, -30vh);
+}
+
+
+/*  --------------------LIST--------------------------- */
+
+.list-container {
+    color:black;
+}
+.list-item {
+    display:grid;
+    grid-template-columns: 6vw auto auto;
+    margin: auto auto 25px;
+    background-color: whitesmoke;
+    width: 40vw;
+    text-align: center;
+}
+
+img {
+    width:5vw;
+        }
+
+.altitude-container {
+    color: red;
+    font-weight: bold;
+}
+
+.list-item, .slider-container {
+    position: relative;
+    right: -100vw;
+}
+.translate-left {
+    transition: transform 0.5s;
+    transform: translate(-100vw, 0);
+}
+
+/* -----------------WEBKIT----------------------- */
+.north {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition-duration: 1s;
+    -webkit-animation-name: rotate-north; 
+    -webkit-animation-duration:         6s; 
+    -webkit-animation-iteration-count:  1;
+}
+
+
+@-webkit-keyframes rotate-north {
+    0%, 65%, 75% {
+    -webkit-transform: rotate(0deg);
+    }
+    70% { 
+    -webkit-transform: rotate(360deg);
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 10s;
+    }
+    100% {
+    -webkit-transform: rotate(90deg);
+
+    }
+}
+
+.south {
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    -webkit-transition-duration: 1s;
+    -webkit-animation-name: rotate-south; 
+    -webkit-animation-duration:         6s; 
+    -webkit-animation-iteration-count:  1;
+}
+
+
+@-webkit-keyframes rotate-south {
+    0%, 65%, 75% {
+    -webkit-transform: rotate(0deg);
+    }
+    70% { 
+    -webkit-transform: rotate(360deg);
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 10s;
+    }
+    100% {
+    -webkit-transform: rotate(270deg);
+
+    }
+}
+
+.east {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition-duration: 1s;
+    -webkit-animation-name: rotate-east; 
+    -webkit-animation-duration:         6s; 
+    -webkit-animation-iteration-count:  1;
+}
+
+
+@-webkit-keyframes rotate-east {
+    0%, 65%, 75% {
+    -webkit-transform: rotate(0deg);
+    }
+    70% { 
+    -webkit-transform: rotate(360deg);
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 10s;
+    }
+    100% {
+    -webkit-transform: rotate(180deg);
+
+    }
+}
+
+.west {
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition-duration: 1s;
+    -webkit-animation-name: rotate-west; 
+    -webkit-animation-duration:         6s; 
+    -webkit-animation-iteration-count:  1;
+}
+
+
+@-webkit-keyframes rotate-west {
+    0%, 65%, 75% {
+    -webkit-transform: rotate(0deg);
+    }
+    70% { 
+    -webkit-transform: rotate(360deg);
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 10s;
+    }
+    100% {
+    -webkit-transform: rotate(360deg);
+
+    }
 }
 
