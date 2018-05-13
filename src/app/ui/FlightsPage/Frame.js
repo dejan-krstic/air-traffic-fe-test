@@ -7,9 +7,9 @@ export const createUIFrame = () => {
                         <div>Select monitoring radius: <p class = "show-radius"></p>
                         </div> 
                         <input id="slider" type="range" list="tickmarks" value="0"/>
-                        <datalist id="tickmarks">
-                        <option value="0" label="0km">
-                        <option value="25">
+                                <datalist id="tickmarks">
+                                    <option value="0" label="0km">
+                                    <option value="25">
                                     <option value="50">
                                     <option value="75">
                                     <option value="100">
@@ -19,7 +19,7 @@ export const createUIFrame = () => {
                                     <option value="200">
                                     <option value="225">
                                     <option value="250" label="250km">
-                                    </datalist>
+                                </datalist>
                                     </div>
                                     <div class="btn-container">
                                     <button class="allow-btn">Allow Geolocation</button>
@@ -28,13 +28,11 @@ export const createUIFrame = () => {
                                     <div class="airplane-container">COURSE</div>
                                     <div class="code-container">FLIGHT CODE</div>
                                     <div class="altitude-container">ALTITUDE</div>
-                                    </div>
-                                    </div>
-                                    <div class="error-container"></div>
-                                    <div class="loader"></div>
-                                    <div class="list-container">
- 
-                            
+                                </div>
+                                </div>
+                                <div class="error-container"></div>
+                                <div class="loader"></div>
+                            <div class="list-container">
                         </div>`
         }
         
