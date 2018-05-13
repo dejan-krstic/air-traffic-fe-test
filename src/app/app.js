@@ -3,13 +3,13 @@ import { dataService } from './services/DataService'
 import { API_URL } from './constants/constants'
 import Flight from './models/Flight'
 import DetailsPage from './ui/DetailsPage/DetailsPage'
-import displayError  from './error/displayError'
+import displayError from './error/displayError'
 import { createUIFrame } from './ui/FlightsPage/Frame'
 import { addFlightListItem } from './ui/FlightsPage/ListItem'
 
 
 
-const data = {  }
+const data = {}
 
 const definePages = () => {
     data.root = document.getElementById('root'),
@@ -17,30 +17,27 @@ const definePages = () => {
 }
 
 const getUserLocationData = () => {
-    // data.button.removeEventListener('click', )
     geolocationService.getUserCoordinates(
         userCoordinates => {
             data.userCoordinates = userCoordinates
             data.button.classList.add('translate-left')
             data.sliderContainer.classList.add('translate-left')
             data.listHeader.classList.add('translate-left')
-        },    // ----- add loader
+        },
         denied => displayError(denied),
         err => displayError(err)
     )
 }
- 
+
 const onSuccessHandler = response => {
-    console.log(response)
     data.flightsList = response
         .map(e => {
-            const { Trak, Alt, Id, Man, Mdl, To, From } = e
-            console.log(Trak);
-            return new Flight(Trak, Alt, Id, Man, Mdl, To, From)
+            const { Trak, Alt, Id, Man, Mdl, To, From, Op } = e
+            return new Flight(Trak, Alt, Id, Man, Mdl, To, From, Op)
         })
         .sort((a, b) => b.altitude - a.altitude)
     data.flightsList
-        .forEach((e,i) => addFlightListItem(e, i, editHash))
+        .forEach((e, i) => addFlightListItem(e, i, editHash))
 
 }
 
@@ -61,20 +58,19 @@ const onDOMLoading = () => {
     data.sliderContainer = document.querySelector('.slider-container')
     data.listHeader = document.querySelector('.header')
     data.uiContainer = document.querySelector('.ui-container')
-    
+
     data.button.addEventListener('click', (e) => {
         e.preventDefault()
-        getUserLocationData() 
+        getUserLocationData()
     })
     data.slider.addEventListener('change', (e) => {
         e.preventDefault();
         data.distance = 2.5 * e.target.value
-        data.showRadius.textContent = data.distance +'km'
+        data.showRadius.textContent = data.distance + 'km'
         data.uiContainer.classList.add('translate-up')
-        console.log(data.distance)
         getFlights(data.userCoordinates, data.distance)
         if (data.intervalSet) return
-        setInterval(() => getFlights(data.userCoordinates, data.distance), 60000)   
+        setInterval(() => getFlights(data.userCoordinates, data.distance), 60000)
         data.intervalSet = true
     })
 }
@@ -83,7 +79,6 @@ export const startApp = () => {
     definePages()
     createUIFrame()
     onDOMLoading()
-
 }
 
 const editHash = (e) => {
@@ -95,18 +90,18 @@ export const displayFlights = () => {
     data.root.classList.remove('display-none')
 }
 
-export const displayDetails = ( code ) => {
+export const displayDetails = (code) => {
 
-    const detailsPage = data.details.firstChild 
+    const detailsPage = data.details.firstChild
     if (detailsPage.id == code) {
         data.root.classList.add('display-none')
         data.details.classList.remove('display-none')
         return
     }
 
-    const flight = data.flightsList.filter(e => e.code == code )[0]
-    
-    if (flight){
+    const flight = data.flightsList.filter(e => e.code == code)[0]
+
+    if (flight) {
         data.details.innerHTML = DetailsPage(flight)
         data.root.classList.add('display-none')
         data.details.classList.remove('display-none')

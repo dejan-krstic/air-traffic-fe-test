@@ -25,7 +25,6 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "jsonp": "^0.2.1",
-    "normalize.css": "^8.0.0",
-    "vanilla-ui-router": "^1.2.2"
+    "normalize.css": "^8.0.0"
   }
 }
