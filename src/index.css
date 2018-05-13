@@ -11,9 +11,8 @@ body {
     font-size: 1.3em;
 }
 
-
-main {
-    margin: 0 10%;
+.display-none {
+    display: none;
 }
 
 button:focus {
@@ -43,7 +42,6 @@ button:focus {
     background-color: #091113;
     border-radius: 1vw;
     color: white;
-    font-family: sans-serif;
     font-size: 2vw;
     padding: 1vw 2vw;
     text-decoration: none;

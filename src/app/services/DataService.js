@@ -1,5 +1,4 @@
 import jsonp from 'jsonp'
-import axios from 'axios'
 
 
 class DataService {
