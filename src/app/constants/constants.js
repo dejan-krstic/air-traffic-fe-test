@@ -1,0 +1,1 @@
+export const API_URL = "https://public-api.adsbexchange.com/VirtualRadar/AircraftList.json"
