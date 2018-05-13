@@ -1,6 +1,6 @@
 export const createUIFrame = () => {
     const root = document.querySelector("#root")
-    root.innerHTML = `<div class="ui-container">
+     root.innerHTML = `<div class="ui-container">
                         <h1 class="title">Air Traffic FE</h1>
                         
                         <div class="slider-container"> 
