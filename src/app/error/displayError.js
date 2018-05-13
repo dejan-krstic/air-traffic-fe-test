@@ -1,5 +1,5 @@
 const displayError = error => {
-    const errorContainer = document.querySelector('.errorContainer');
+    const errorContainer = document.querySelector('.error-container');
 
     if (error.code === 1) {
         errorContainer.textContent = "We are unable to display results. Please enable geolocation in your browser's settings.";

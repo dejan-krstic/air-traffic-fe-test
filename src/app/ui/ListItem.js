@@ -15,8 +15,8 @@ export const addFlightListItem = (flight, counter, callback) => {
     airplaneImage.src = "../assets/airplane.png"
     airplaneImage.alt = "airplane"
     airplaneImage.classList.add("airplane-image")
+    airplaneImage.classList.add(flight.getCourse())
     airplaneImgContainer.classList.add("airplane-container")
-    airplaneImgContainer.classList.add(flight.getCourse())
 
     altitudeContainer.textContent = altitude
     altitudeContainer.classList.add("altitude-container")
@@ -31,6 +31,6 @@ export const addFlightListItem = (flight, counter, callback) => {
 
     setTimeout(() => {
         listItem.classList.add("translate-left")
-    }, counter*200)
+    }, (counter+1)*200)
 
 }

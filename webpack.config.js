@@ -27,15 +27,10 @@ module.exports = {
             //         loader: "eslint-loader",
             //     }
             // },
-            {
-                test: /\.hbs$/,
-                use: {
-                    loader: 'handlebars-loader'
-                }
 
-            },
             {
                 test: /\.css$/,
+                exclude: /node_modules/,
                 use: [
                     { loader: 'style-loader' },
                     { loader: 'css-loader' }
