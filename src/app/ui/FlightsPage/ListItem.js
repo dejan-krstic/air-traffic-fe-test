@@ -12,7 +12,7 @@ export const addFlightListItem = (flight, counter, callback) => {
     
     listItem.classList.add("list-item")
     
-    airplaneImage.src = "../assets/airplane.png"
+    airplaneImage.src = "./assets/airplane.png"
     airplaneImage.alt = "airplane"
     airplaneImage.classList.add("airplane-image")
     airplaneImage.classList.add(flight.getCourse())

@@ -1,5 +1,5 @@
 const path = require('path');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -20,6 +20,11 @@ module.exports = {
                 },
             },
             {
+                test: /\.(png|jpg)$/,
+                exclude: /node_modules/,
+                loader: "file-loader"
+            },
+            {
                 test: /\.css$/,
                 exclude: /node_modules/,
                 use: [
@@ -30,9 +35,9 @@ module.exports = {
         ]
     },
     plugins: [
-        // new HtmlWebpackPlugin({
-        //     filename: 'index.html',
-        //     template: './src/index.html'
-        // }),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './src/index.html'
+        }),
     ]
 };
