@@ -8,8 +8,8 @@ Feel free to check out the project here: [Air Traffic FE](https://dejan-krstic.g
 
 
 ## Showcasing
-- jQuery
 - RESTFul API
+- JSONP
 - Separation of concerns
 - Routing and navigation
 
