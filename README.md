@@ -4,7 +4,10 @@ Single Page Aplication, that displays data of all the airplanes that are fluing 
 
 App was created without frameworks in 48 hours as a test project aplying for entry level Front-End position. Basic CSS transitions and effects are used to enhance UX and simple hash router for navigating through pages. 
 
+
 #### Feel free to check out the project here: [<b>Air Traffic FE</b>](https://dejan-krstic.github.io/air-traffic-fe-test/)
+
+
 
 
 ## Showcasing
