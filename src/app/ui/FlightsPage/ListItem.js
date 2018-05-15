@@ -1,3 +1,5 @@
+import airplaneImageSrc from '../../../../resources/assets/img/airplane.png'
+
 export const addFlightListItem = (flight, counter, callback) => {
     
     const listContainer = document.querySelector(".list-container")
@@ -12,7 +14,7 @@ export const addFlightListItem = (flight, counter, callback) => {
     
     listItem.classList.add("list-item")
     
-    airplaneImage.src = "./assets/airplane.png"
+    airplaneImage.src = airplaneImageSrc
     airplaneImage.alt = "airplane"
     airplaneImage.classList.add("airplane-image")
     airplaneImage.classList.add(flight.getCourse())

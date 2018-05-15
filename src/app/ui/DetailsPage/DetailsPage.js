@@ -1,4 +1,4 @@
-import './detailsPage.css'
+import '../../../../resources/scss/detailsPage.scss'
 
 const DetailsPage = (e) => {
     const { course, altitude, code, manufacturer, model, destination, flightOrigin, airline } = e
