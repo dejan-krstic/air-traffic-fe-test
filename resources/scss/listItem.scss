@@ -1,0 +1,40 @@
+img.airplane-image {    
+    width: 10vw;
+}
+.list-container {
+    color:black;
+}
+.list-item {
+    display:grid;
+    grid-template-columns: 6vw auto auto;
+    margin: auto auto 25px;
+    background-color: whitesmoke;
+    width: 40vw;
+    text-align: center;
+}
+
+img {
+    width:5vw;
+}
+
+.altitude-container {
+    color: red;
+    font-weight: bold;
+}
+
+.list-item, .slider-container {
+    position: relative;
+    right: -100vw;
+}
+.translate-left {
+    transition: transform 0.5s;
+    transform: translate(-100vw, 0);
+}
+
+
+@media screen and (min-width: 992px) {
+    img.airplane-image {    
+        width: 5vw;
+    }
+
+}

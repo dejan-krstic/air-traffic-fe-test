@@ -1,0 +1,94 @@
+
+
+
+.ui-container {
+    position: relative;
+    top: 30vh;
+  }
+  .ui-container {
+      display: grid;
+    }
+.title {
+    font-family: sans-serif;
+    font-weight: 1000;
+    font-size: 8vh;
+    margin-bottom: 1vh;
+}
+.btn-container {
+    height:4vh;
+}
+
+.allow-btn {
+    background-color: #202030;
+    border-radius: 2vw;
+    color: whitesmoke;
+    font-size: 4vw;
+    padding: 2vw 4vw;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    margin: auto auto;
+}        
+
+.allow-btn:hover {
+    background-color: #404050;
+}
+
+.allow-btn:active {
+    top: 3px;
+}
+
+
+div.header {
+    background-color: rgb(64,224,208);
+    padding: 5px 15px;
+    
+}
+#slider {
+    width: 30vw;
+}
+
+.error-container {
+    position: relative;
+    display:inline;
+    top: -10vh;
+    margin: 0 auto;
+    color: red;
+    text-align: center;
+}
+
+.show-radius {
+    display: inline-block;
+}
+
+.translate-up {
+    transition: transform 0.5s;
+    transform: translate(0, -30vh);
+}
+
+@media screen and (min-width: 992px) {
+    .title {
+        font-weight: 1000;
+        font-size: 12vh;
+        margin-bottom: 2vh;
+    }
+
+    .btn-container {
+        height:2vh;
+    }
+    
+    .allow-btn {
+        background-color: #202030;
+        border-radius: 1vw;
+        font-size: 2vw;
+        padding: 1vw 2vw;
+
+    }        
+    
+    body{
+        font-size: 1.3em;
+        font-stretch: normal;
+    }
+
+
+}
