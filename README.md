@@ -1,3 +1,14 @@
+## !important note: 
+Master branch and [<b>GitHub Page</b>](https://dejan-krstic.github.io/air-traffic-fe-test/) display the code written in 48 hours. After that time I continued my work on development branch and current changes are:
+- webpack is completely rewritten, and split into webpack.dev.js and webpack.prod.js 
+- folders are reorganized 
+- using EJS templates for creating index.html 
+- importing airplane image and favicon dynamically 
+- installed BrowserSync and switched to SCSS since I plan to create better responsiveness for mobile devices
+
+
+
+
 # Air Traffic Front-End Test
 
 
