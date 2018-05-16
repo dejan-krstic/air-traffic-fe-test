@@ -14,6 +14,7 @@ export const addFlightListItem = (flight, counter, callback) => {
     const { altitude, code } = flight
     
     listItem.classList.add("list-item")
+    listItem.setAttribute("id", flight.code)
     
     airplaneImage.src = airplaneImageSrc
     airplaneImage.alt = "airplane"

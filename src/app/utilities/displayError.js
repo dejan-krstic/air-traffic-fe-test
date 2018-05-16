@@ -1,4 +1,4 @@
-const displayError = error => {
+export default (error) => {
     const errorContainer = document.querySelector('.error-container')
 
     if (error.code === 1) {
@@ -12,4 +12,3 @@ const displayError = error => {
     }
 };
 
-export default displayError;

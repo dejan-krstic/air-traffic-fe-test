@@ -3,9 +3,10 @@ import { dataService } from './services/DataService'
 import { API_URL } from './constants/constants'
 import Flight from './models/Flight'
 import DetailsPage from './ui/DetailsPage/DetailsPage'
-import displayError from './error/displayError'
+import displayError from './utilities/displayError'
 import { createUIFrame } from './ui/FlightsPage/Frame'
 import { addFlightListItem } from './ui/FlightsPage/ListItem'
+import createSetBack from './utilities/createSetBack'
 
 
 
@@ -82,7 +83,13 @@ export const startApp = () => {
 }
 
 const editHash = (e) => {
-    window.location.hash = `#details/${e.code}`
+    const listItem = document.getElementById(e.code)
+    listItem.classList.add('go-to-details')
+    setTimeout(() => { 
+        window.location.hash = `#details/${e.code}` 
+        listItem.classList.remove('go-to-details')
+        }, 350)
+    
 }
 
 export const displayFlights = () => {
@@ -105,6 +112,7 @@ export const displayDetails = (code) => {
         data.details.innerHTML = DetailsPage(flight)
         data.root.classList.add('display-none')
         data.details.classList.remove('display-none')
+        createSetBack()
     } else {
         window.location.hash = `#flights`
     }
