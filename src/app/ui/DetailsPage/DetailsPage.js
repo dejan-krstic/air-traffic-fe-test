@@ -13,7 +13,7 @@ const DetailsPage = (e) => {
                 <button class="details-back-btn">Back to Flights Page</button>
             </a>
             <div class=details-body-container>
-                <div class="details-logo-container">
+                <div class="details-airplane-container">
                     <img src="${airplaneImageSrc}" class=${e.getCourse()} alt="airplane" />
                 </div> 
                 <div class="details-logo-container">

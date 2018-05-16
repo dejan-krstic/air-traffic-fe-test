@@ -94,6 +94,22 @@
         height:300px;
     }
 }
+.details-airplane-container>img {   
+    width: 600px;
+    @media screen and (min-width: 768px) {
+        width:300px;
+    }
+}
+
+.details-airplane-container{
+    display:inline-block;
+    width: 600px;
+    height:600px;
+    @media screen and (min-width: 768px) {
+        width:300px;
+        height:300px;
+    }
+}
 .details-info-container {
     display:inline-block;
     margin: 0 auto;
@@ -118,3 +134,11 @@ span {
     overflow:hidden;
 }
 
+.details-logo-container, .details-airplane-container, .details-info-container {
+    position: relative;
+    right: -100vw;
+}
+.translate-left {
+    transition: transform 0.7s;
+    transform: translate(-100vw, 0);
+}
