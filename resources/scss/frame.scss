@@ -1,37 +1,67 @@
-
-
-
 .ui-container {
     position: relative;
-    top: 30vh;
+    top: 30vmin;
   }
-  .ui-container {
-      display: grid;
-    }
+
 .title {
     font-family: sans-serif;
     font-weight: 1000;
-    font-size: 8vh;
-    margin-bottom: 1vh;
+    font-size: 14vmin;
+    margin-bottom: 1vmin;
+    margin-top:  3vmin;
+    @media screen and (min-width: 576px) {
+        font-size: 13vmin;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 12vmin;
+    }
+    @media screen and (min-width: 992px) {
+        font-size: 11vmin;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 10vmin;
+    }
 }
 .btn-container {
-    height:4vh;
+    height:4vmin;
 }
 
 .allow-btn {
     background-color: #202030;
-    border-radius: 2vw;
     color: whitesmoke;
-    font-size: 4vw;
-    padding: 2vw 4vw;
     text-decoration: none;
     cursor: pointer;
     border: none;
     margin: auto auto;
+    border-radius: 3vmin;
+    font-size: 6vmin;
+    padding: 3vmin 6vmin;
+    @media screen and (min-width: 576px) {
+        border-radius: 2.8vmin;
+        font-size: 5.6vmin;
+        padding: 2.8vmin 5.6vmin;
+    }
+    @media screen and (min-width: 768px) {
+        border-radius: 2.6vmin;
+        font-size: 5.2vmin;
+        padding: 2.6vmin 5.2vmin;
+    }
+    @media screen and (min-width: 992px) {
+        border-radius: 2.5vmin;
+        font-size: 5vmin;
+        padding: 2.5vmin 5vmin;
+    }
+    @media screen and (min-width: 1200px) {
+        border-radius: 2.4vmin;
+        font-size: 4.8vmin;
+        padding: 2.4vmin 4.8vmin;
+    }
+
 }        
 
 .allow-btn:hover {
-    background-color: #404050;
+    background-color: lighten(#202030, 7%);
+    cursor: pointer;
 }
 
 .allow-btn:active {
@@ -41,11 +71,11 @@
 
 div.header {
     background-color: rgb(64,224,208);
-    padding: 5px 15px;
+    padding: .5% 1.5%;
     
 }
 #slider {
-    width: 30vw;
+    width: 70vmin;
 }
 
 .error-container {
@@ -63,32 +93,5 @@ div.header {
 
 .translate-up {
     transition: transform 0.5s;
-    transform: translate(0, -30vh);
-}
-
-@media screen and (min-width: 992px) {
-    .title {
-        font-weight: 1000;
-        font-size: 12vh;
-        margin-bottom: 2vh;
-    }
-
-    .btn-container {
-        height:2vh;
-    }
-    
-    .allow-btn {
-        background-color: #202030;
-        border-radius: 1vw;
-        font-size: 2vw;
-        padding: 1vw 2vw;
-
-    }        
-    
-    body{
-        font-size: 1.3em;
-        font-stretch: normal;
-    }
-
-
+    transform: translate(0, -30vmin);
 }

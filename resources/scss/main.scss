@@ -1,4 +1,11 @@
 $primary-color: whitesmoke;
+$secondary-color: #202030;
+$font-size: 4vmin;
+$font-size-576: 3.6vmin;
+$font-size-768: 3.2vmin;
+$font-size-992: 2.8vmin;
+$font-size-1200: 2.4vmin;
+
 
 
 body {
@@ -6,9 +13,21 @@ body {
     background-color: $primary-color;
     text-align: center;
     font-family: sans-serif;
-    font-size: 1em;
-    color: #202030;
-    font-stretch: condensed;
+    font-size: $font-size;
+    color: $secondary-color;
+    @media screen and (min-width: 576px) {
+        font-size: $font-size-576;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: $font-size-768;
+    }
+    @media screen and (min-width: 992px) {
+        font-size: $font-size-992;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: $font-size-1200;
+    }
+                
 }
 
 .display-none {
@@ -19,25 +38,6 @@ button:focus {
     box-shadow: none;
     outline: none;
 }
-
-@media screen and (min-width: 992px) {
-    $primary-color: red;
-
-    
-    body{
-        font-size: 1.3em;
-        font-stretch: normal;
-    }
-
-
-}
-
-/*  ---------------------HEADER--------------------------- */
-
-
-
-/*  --------------------LIST--------------------------- */
-
 
 
 

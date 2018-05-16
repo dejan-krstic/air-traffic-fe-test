@@ -1,5 +1,4 @@
 import '../../../../resources/scss/listItem.scss'
-
 import airplaneImageSrc from '../../../../resources/assets/img/airplane.png'
 
 export const addFlightListItem = (flight, counter, callback) => {
