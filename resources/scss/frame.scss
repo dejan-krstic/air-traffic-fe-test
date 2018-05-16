@@ -1,0 +1,97 @@
+.ui-container {
+    position: relative;
+    top: 30vmin;
+  }
+
+.title {
+    font-family: sans-serif;
+    font-weight: 1000;
+    font-size: 14vmin;
+    margin-bottom: 1vmin;
+    margin-top:  3vmin;
+    @media screen and (min-width: 576px) {
+        font-size: 13vmin;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 12vmin;
+    }
+    @media screen and (min-width: 992px) {
+        font-size: 11vmin;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 10vmin;
+    }
+}
+.btn-container {
+    height:4vmin;
+}
+
+.allow-btn {
+    background-color: #202030;
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    margin: auto auto;
+    border-radius: 3vmin;
+    font-size: 6vmin;
+    padding: 3vmin 6vmin;
+    @media screen and (min-width: 576px) {
+        border-radius: 2.8vmin;
+        font-size: 5.6vmin;
+        padding: 2.8vmin 5.6vmin;
+    }
+    @media screen and (min-width: 768px) {
+        border-radius: 2.6vmin;
+        font-size: 5.2vmin;
+        padding: 2.6vmin 5.2vmin;
+    }
+    @media screen and (min-width: 992px) {
+        border-radius: 2.5vmin;
+        font-size: 5vmin;
+        padding: 2.5vmin 5vmin;
+    }
+    @media screen and (min-width: 1200px) {
+        border-radius: 2.4vmin;
+        font-size: 4.8vmin;
+        padding: 2.4vmin 4.8vmin;
+    }
+
+}        
+
+.allow-btn:hover {
+    background-color: lighten(#202030, 7%);
+    cursor: pointer;
+}
+
+.allow-btn:active {
+    top: 3px;
+}
+
+
+div.header {
+    background-color: rgb(64,224,208);
+    padding: .5% 1.5%;
+    
+}
+#slider {
+    width: 70vmin;
+}
+
+.error-container {
+    position: relative;
+    display:inline;
+    top: -10vh;
+    margin: 0 auto;
+    color: red;
+    text-align: center;
+}
+
+.show-radius {
+    display: inline-block;
+}
+
+.translate-up {
+    transition: transform 0.5s;
+    transform: translate(0, -30vmin);
+}

@@ -1,3 +1,5 @@
+import '../../../../resources/scss/frame.scss'
+
 export const createUIFrame = () => {
     const root = document.querySelector("#root")
      root.innerHTML = `<div class="ui-container">

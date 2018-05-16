@@ -1,0 +1,55 @@
+.list-container {
+    color:black;
+}
+.list-item {
+    display:grid;
+    grid-template-columns: 20% 40% 40%;
+    margin: auto auto 25px;
+    background-color: whitesmoke;
+    width: 90vmin;
+    text-align: center;
+}
+
+.list-container {
+    .list-item { 
+    * {
+        transition: all .2s ease-in-out;
+        } 
+    }
+.list-item:hover { 
+    * {
+        cursor: pointer;
+        transform: scale(1.3); 
+        }
+    }
+}
+
+.airplane-image {
+    width:11vmax;
+    @media screen and (min-width: 576px) {
+        width:9.5vmax;
+    }
+    @media screen and (min-width: 768px) {
+        width:8vmax;
+    }
+    @media screen and (min-width: 992px) {
+        width:6.5vmax;
+    }
+    @media screen and (min-width: 1200px) {
+        width:5vmax;
+    }
+}
+
+.altitude-container {
+    color: red;
+    font-weight: bold;
+}
+
+.list-item, .slider-container {
+    position: relative;
+    right: -100vw;
+}
+.translate-left {
+    transition: transform 0.5s;
+    transform: translate(-100vw, 0);
+}
