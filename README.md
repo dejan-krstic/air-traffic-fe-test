@@ -5,7 +5,10 @@ Master branch and [<b>GitHub Pages</b>](https://dejan-krstic.github.io/air-traff
 - using EJS templates for creating index.html 
 - importing airplane image and favicon dynamically 
 - installed BrowserSync and switched to SCSS since I plan to create better responsiveness for mobile devices
+- ...responsiveness completed
+- animated Details page
 
+# Latest demo, uploaded on Netlify: [AIR TRAFFIC FE](https://air-traffic-fe.netlify.com/#flights)
 
 
 
@@ -17,7 +20,7 @@ Single Page Application, that displays data of all the airplanes that are flying
 App was created without frameworks in 48 hours as a test project applying for entry level Front-End position. Basic CSS transitions and effects are used to enhance UX and simple hash router for navigating through pages.
 
 
-### Feel free to check out the project here:  [<b>Air Traffic FE</b>](https://dejan-krstic.github.io/air-traffic-fe-test/)
+### Feel free to check out the project here(48-hour work):  [<b>Air Traffic FE</b>](https://dejan-krstic.github.io/air-traffic-fe-test/)
 
 
 
