@@ -8,7 +8,8 @@ Master branch and [<b>GitHub Pages</b>](https://dejan-krstic.github.io/air-traff
 - ...responsiveness completed
 - animated Details page
 
-# Latest demo, uploaded on Netlify: [AIR TRAFFIC FE](https://air-traffic-fe.netlify.com/#flights)
+### Checkout the development branch:  git clone https://github.com/dejan-krstic/air-traffic-fe-test.git -b development
+### Latest demo, uploaded on Netlify: [AIR TRAFFIC FE](https://air-traffic-fe.netlify.com/#flights)
 
 
 
