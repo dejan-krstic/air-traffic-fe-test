@@ -3,7 +3,7 @@ Master branch and [<b>GitHub Pages</b>](https://dejan-krstic.github.io/air-traff
 - webpack is completely rewritten, split into webpack.dev.js and webpack.prod.js with added functionalities
 - folders are reorganized 
 - using EJS templates for creating index.html 
-- importing airplane image and favicon dynamically 
+- imported airplane image and favicon dynamically 
 - installed BrowserSync and switched to SCSS since I plan to create better responsiveness for mobile devices
 - ...responsiveness completed
 - animated Details page
