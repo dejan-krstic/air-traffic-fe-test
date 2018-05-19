@@ -7,10 +7,11 @@ import displayError from './utilities/displayError'
 import { createUIFrame } from './ui/FlightsPage/Frame'
 import { addFlightListItem } from './ui/FlightsPage/ListItem'
 import createSetBack from './utilities/createSetBack'
+import toggleDisplay from './utilities/toggleDisplay'
 
 
 
-const data = {}
+export const data = {}
 
 const definePages = () => {
     data.root = document.getElementById('root'),
@@ -22,6 +23,8 @@ const getUserLocationData = () => {
         userCoordinates => {
             data.userCoordinates = userCoordinates
             data.button.classList.add('translate-left')
+            data.sliderContainer.classList.remove('visibility-hidden')
+            data.listHeader.classList.remove('visibility-hidden')
             data.sliderContainer.classList.add('translate-left')
             data.listHeader.classList.add('translate-left')
         },
@@ -110,10 +113,10 @@ export const displayDetails = (code) => {
 
     if (flight) {
         data.details.innerHTML = DetailsPage(flight)
-        data.root.classList.add('display-none')
-        data.details.classList.remove('display-none')
+        toggleDisplay()
         createSetBack()
     } else {
         window.location.hash = `#flights`
+    
     }
 }
