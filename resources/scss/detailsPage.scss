@@ -5,9 +5,12 @@
 .details-title {
     font-family: sans-serif;
     font-weight: 1000;
-    font-size: 11vmin;
+    font-size: 12vmin;
     margin-bottom: 3vmin;
     color: #202030;
+    @media screen and (min-width: 332px) {
+        font-size: 11vmin;
+    }
     @media screen and (min-width: 576px) {
         font-size: 10vmin;
     }
@@ -29,10 +32,15 @@
     cursor: pointer;
     border: none;
     margin: auto auto 15vmin;
-    border-radius: 2.4vmin;
-    font-size: 4.8vmin;
-    padding: 2.4vmin 4.8vmin;
+    border-radius: 2.6vmin;
+    font-size: 5.2vmin;
+    padding: 2.6vmin 5.2vmin;
     transition: all .2s ease-in-out;
+    @media screen and (min-width: 332px) {
+        border-radius: 2.4vmin;
+        font-size: 4.8vmin;
+        padding: 2.4vmin 4.8vmin;
+    }
     @media screen and (min-width: 576px) {
         border-radius: 2.2vmin;
         font-size: 4.4vmin;
@@ -59,6 +67,7 @@
 .details-back-btn:hover {
     background-color: lighten(#202030, 7%);
     cursor: pointer;
+    transition: transform 0.7s;
     transform: scale(1.1); 
 }
 
@@ -126,12 +135,13 @@
 }
 span {
     display: block;
-    text-overflow: clip;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     border-radius: 5px;
     background-color:darken($color: whitesmoke, $amount: 7%); 
     margin-left: 2%;
     padding-top: 4px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .details-logo-container, .details-airplane-container, .details-info-container {

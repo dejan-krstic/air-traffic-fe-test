@@ -1,5 +1,7 @@
 import '../../../../resources/scss/detailsPage.scss'
 import airplaneImageSrc from '../../../../resources/assets/img/airplane.png'
+import placeholderImageSrc from '../../../../resources/assets/img/placeholder.png'
+// import { PLACEHOLDER_IMAGE } from '../../constants/constants'
 
 
 const DetailsPage = (e) => {
@@ -17,7 +19,8 @@ const DetailsPage = (e) => {
                     <img src="${airplaneImageSrc}" class=${e.getCourse()} alt="airplane" />
                 </div> 
                 <div class="details-logo-container">
-                    <img src="${e.getAirlineLogoUrl()}" alt="${airline}" />
+                    <img src="${e.getAirlineLogoUrl()}"  alt="${airline}" id="details-logo-image"  class="display-none"/>
+                    <img src="${placeholderImageSrc}"  alt="${airline}" id="details-logo-placeholder"/>
                 </div>
                 <div class="details-info-container">
                     <div class="details-paragraph"> <span class="paragraph-property"> Airline: </span> <span class="paragraph-value"> ${airline} </span></div>

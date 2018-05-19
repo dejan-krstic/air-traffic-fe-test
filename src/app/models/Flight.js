@@ -1,8 +1,8 @@
 class Flight {
     constructor (course, altitude, code, manufacturer, model, destination, flightOrigin, airline){
         this.course = course;
-        this.altitude = altitude;
-        this.code = code;
+        this.altitude = altitude || 'n/a';
+        this.code = code || 'n/a';
         this.manufacturer = manufacturer;
         this.model = model;
         this.destination = destination || 'Unknown destination';

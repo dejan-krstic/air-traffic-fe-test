@@ -62,16 +62,18 @@
 .allow-btn:hover {
     background-color: lighten(#202030, 7%);
     cursor: pointer;
+    // transform: scale(1.05); 
 }
 
 .allow-btn:active {
-    top: 3px;
+    top: 7px;
 }
 
 
 div.header {
     background-color: rgb(64,224,208);
     padding: .5% 1.5%;
+    border-radius: 5px;
     
 }
 #slider {
