@@ -7,6 +7,7 @@ Master branch and [<b>GitHub Pages</b>](https://dejan-krstic.github.io/air-traff
 - installed BrowserSync and switched to SCSS since I plan to create better responsiveness for mobile devices
 - ...responsiveness completed
 - animated Details page
+- added placeholder logo image
 
 ### Checkout the development branch:  
 $ git clone https://github.com/dejan-krstic/air-traffic-fe-test.git -b development
