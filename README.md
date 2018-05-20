@@ -10,7 +10,7 @@ Master branch and GitHub Pages display the code written in 48 hours. After that 
 - added placeholder logo image
 - reworked code to be able to remove babel-polyfills from dependencies
 
-# Development demo, uploaded on Netlify: [AIR TRAFFIC FE](https://air-traffic-fe.netlify.com/#flights)
+# [Development demo, uploaded on Netlify!] (https://air-traffic-fe.netlify.com/#flights)
 
 
 
