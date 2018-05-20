@@ -1,5 +1,5 @@
 ## !important note: 
-Master branch and [<b>GitHub Pages</b>](https://dejan-krstic.github.io/air-traffic-fe-test/) display the code written in 48 hours. After that time I continued my work on development branch and current changes are:
+Master branch and GitHub Pages display the code written in 48 hours. After that time I continued my work on development branch and current changes are:
 - webpack is completely rewritten, split into webpack.dev.js and webpack.prod.js with added functionalities
 - folders are reorganized 
 - using EJS templates for creating index.html 
@@ -8,9 +8,8 @@ Master branch and [<b>GitHub Pages</b>](https://dejan-krstic.github.io/air-traff
 - ...responsiveness completed
 - animated Details page
 - added placeholder logo image
+- reworked code to be able to remove babel-polyfills from dependencies
 
-### Checkout the development branch:  
-$ git clone https://github.com/dejan-krstic/air-traffic-fe-test.git -b development
 ## Development demo, uploaded on Netlify: [AIR TRAFFIC FE](https://air-traffic-fe.netlify.com/#flights)
 
 
@@ -24,6 +23,9 @@ App was created without frameworks in 48 hours as a test project applying for en
 
 
 ### Feel free to check out the project here(48-hour work):  [<b>Air Traffic FE</b>](https://dejan-krstic.github.io/air-traffic-fe-test/)
+
+Default branch is currently set to development, but master branch can still be cloned with:
+$ git clone https://github.com/dejan-krstic/air-traffic-fe-test.git -b master
 
 
 
