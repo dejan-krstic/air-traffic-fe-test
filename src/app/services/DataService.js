@@ -3,8 +3,8 @@ import jsonp from 'jsonp'
 
 class DataService {
 
-    async getFlightsData(url, successHandler, errHandler) {
-        await jsonp(url, null,
+    getFlightsData(url, successHandler, errHandler) {
+        jsonp(url, null,
             (err, response) => {
                 if (err) {
                     errHandler(err.message)
