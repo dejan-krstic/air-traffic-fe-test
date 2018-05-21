@@ -1,7 +1,7 @@
 {
   "name": "AirTrafficFE",
   "version": "1.0.0",
-  "description": "Application that monitors air traffic ",
+  "description": "Application that monitors air traffic in proximity of users current location",
   "main": "index.js",
   "repository": "https://github.com/dejan-krstic/air-traffic-fe-test.git",
   "author": "dejan-krstic <dejanmkrstic@gmail.com>",
