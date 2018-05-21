@@ -22,7 +22,7 @@ Single Page Application, that displays data of all the airplanes that are flying
 App was created without frameworks in 48 hours as a test project applying for entry level Front-End position. Basic CSS transitions and effects are used to enhance UX and engineered simple hash router for navigating through pages. Flight list doesn't refresh while navigating(task prerequisite). 
 
 
-### Feel free to check out the project here(48-hour work):  [<b>Air Traffic FE</b>](https://dejan-krstic.github.io/air-traffic-fe-test/)
+Master branch demonstration (48-hour work):  [<b>Air Traffic FE</b>](https://dejan-krstic.github.io/air-traffic-fe-test/)
 
 Default branch is currently set to development, but master branch can still be cloned with: <br />
 $ git clone https://github.com/dejan-krstic/air-traffic-fe-test.git -b master
