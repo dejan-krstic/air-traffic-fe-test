@@ -1,2 +1,1 @@
 export const API_URL = "https://public-api.adsbexchange.com/VirtualRadar/AircraftList.json"
-export const PLACEHOLDER_IMAGE = "https://vignette.wikia.nocookie.net/pokemongo/images/0/07/Weather_Fog_Day.png/revision/latest?cb=20171206224247"

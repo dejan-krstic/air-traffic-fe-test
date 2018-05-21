@@ -8,6 +8,9 @@ import { createUIFrame } from './ui/FlightsPage/Frame'
 import { addFlightListItem } from './ui/FlightsPage/ListItem'
 import createSetBack from './utilities/createSetBack'
 import toggleDisplay from './utilities/toggleDisplay'
+import translateLeft from './utilities/translateLeft'
+import initializeDOM_Selectors from './utilities/initializeDOM_Selectors'
+import translateUp from './utilities/translateUp'
 
 
 
@@ -15,18 +18,14 @@ export const data = {}
 
 const definePages = () => {
     data.root = document.getElementById('root'),
-    data.details = document.getElementById('details')
+        data.details = document.getElementById('details')
 }
 
 const getUserLocationData = () => {
     geolocationService.getUserCoordinates(
         userCoordinates => {
             data.userCoordinates = userCoordinates
-            data.button.classList.add('translate-left')
-            data.sliderContainer.classList.remove('visibility-hidden')
-            data.listHeader.classList.remove('visibility-hidden')
-            data.sliderContainer.classList.add('translate-left')
-            data.listHeader.classList.add('translate-left')
+            translateLeft()
         },
         denied => displayError(denied),
         err => displayError(err)
@@ -55,25 +54,20 @@ const getFlights = (userCoordinates, distance) => {
 }
 
 const onDOMLoading = () => {
-    data.button = document.querySelector('button')
-    data.slider = document.querySelector('input')
-    data.showRadius = document.querySelector('.show-radius')
-    data.listContainer = document.querySelector('.list-container')
-    data.sliderContainer = document.querySelector('.slider-container')
-    data.listHeader = document.querySelector('.header')
-    data.uiContainer = document.querySelector('.ui-container')
+    initializeDOM_Selectors()
 
     data.button.addEventListener('click', (e) => {
         e.preventDefault()
         getUserLocationData()
     })
     data.slider.addEventListener('change', (e) => {
-        e.preventDefault();
+        e.preventDefault()
         data.distance = 2.5 * e.target.value
-        data.showRadius.textContent = data.distance + 'km'
-        data.uiContainer.classList.add('translate-up')
+        translateUp()
         getFlights(data.userCoordinates, data.distance)
-        if (data.intervalSet) return
+        if (data.intervalSet) {
+            return
+        }
         setInterval(() => getFlights(data.userCoordinates, data.distance), 60000)
         data.intervalSet = true
     })
@@ -88,11 +82,10 @@ export const startApp = () => {
 const editHash = (e) => {
     const listItem = document.getElementById(e.code)
     listItem.classList.add('go-to-details')
-    setTimeout(() => { 
-        window.location.hash = `#details/${e.code}` 
+    setTimeout(() => {
+        window.location.hash = `#details/${e.code}`
         listItem.classList.remove('go-to-details')
-        }, 350)
-    
+    }, 350)
 }
 
 export const displayFlights = () => {
@@ -105,7 +98,7 @@ export const displayDetails = (code) => {
     const detailsPage = data.details.firstChild
     if (detailsPage.id == code) {
         data.root.classList.add('display-none')
-        data.details.classList.remove('display-none')
+        data.details.classList.remove('display-none')        
         return
     }
 
@@ -117,6 +110,5 @@ export const displayDetails = (code) => {
         createSetBack()
     } else {
         window.location.hash = `#flights`
-    
     }
 }

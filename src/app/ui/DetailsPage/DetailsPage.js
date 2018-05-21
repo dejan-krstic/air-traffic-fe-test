@@ -1,8 +1,6 @@
 import '../../../../resources/scss/detailsPage.scss'
 import airplaneImageSrc from '../../../../resources/assets/img/airplane.png'
 import placeholderImageSrc from '../../../../resources/assets/img/placeholder.png'
-// import { PLACEHOLDER_IMAGE } from '../../constants/constants'
-
 
 const DetailsPage = (e) => {
     const { course, altitude, code, manufacturer, model, destination, flightOrigin, airline } = e
