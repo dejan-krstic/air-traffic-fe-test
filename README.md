@@ -7,7 +7,9 @@ Aplication displays data of all the airplanes that are flying over user's curren
  
 Basic CSS transitions and effects are used to enhance UX and engineered simple hash router for navigating through pages. 
 
-## [Feel free to checkout demonstration site, uploaded on Netlify](https://air-traffic-fe.netlify.com/#flights)
+
+## [Feel free to checkout GitHub Pages demo](https://dejan-krstic.github.io/air-traffic-fe-test/)
+#### [Or Netlify demo](https://air-traffic-fe.netlify.com/)
 
 
 ## Showcasing
